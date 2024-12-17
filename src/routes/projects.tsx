@@ -1,26 +1,42 @@
 import { A } from "@solidjs/router";
-import { For } from "solid-js";
+import { For, Match, Show, Switch, onMount, createResource, createSignal } from "solid-js";
+import { createStore } from "solid-js/store";
 import { readFileSync } from "fs";
 
 import ProjectCard from "../components/ProjectCard";
 
-export default function Projects() {
-  interface Project {
-    name: string;
-    link: string;
-    readme: string;
-  }
+interface Project {
+  name: string;
+  desc: string;
+  link: string;
+  readme: string;
+}
 
-  const json = readFileSync("src/data/projects.json", "utf8")
-  const data = JSON.parse(json)
+const fetchProjects = async () => {
+  const res = await fetch('http://localhost:4000/projects');
+  return res.json()
+};
+
+export default function Projects() {
+  const [projects] = createResource(fetchProjects);
 
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
       <h1 class="max-6-xs text-6xl text-sky-700 font-semibold uppercase my-16">Projects</h1>
       <div class="flex flex-wrap justify-start justify-items-start">
-        <For each={data}>
-          {(project: Project) => <ProjectCard project={project}/>}
-        </For>
+        <Show when={projects.loading}>
+          <p>Loading...</p>
+        </Show>
+        <Switch>
+          <Match when={projects.error}>
+            <span>Error: {projects.error}</span>
+          </Match>
+          <Match when={projects()}>
+            <For each={projects()}>
+              {(project: Project) => <ProjectCard project={project}/>}
+            </For>
+          </Match>
+        </Switch>
       </div>
       <p class="my-4">
         <A href="/" class="text-sky-600 hover:underline">
