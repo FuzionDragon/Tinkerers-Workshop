@@ -23,6 +23,7 @@ export default function Projects() {
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
       <h1 class="max-6-xs text-6xl text-sky-700 font-semibold uppercase my-16">Projects</h1>
+      <a class="font-sans m-5 text-sky-300 text-l text-wl" href="https://github.com/FuzionDragon" target="_blank">Code hosted on Github</a>
       <div class="flex flex-wrap justify-start justify-items-start">
         <Show when={projects.loading}>
           <p>Loading...</p>
@@ -47,6 +48,10 @@ export default function Projects() {
         {" - "}
         <A href="/about" class="text-sky-600 hover:underline my-16">
           About Page
+        </A>
+        {" - "}
+        <A href="/contacts" class="text-sky-600 hover:underline">
+          Contacts
         </A>
       </p>
     </main>

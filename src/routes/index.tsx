@@ -14,6 +14,10 @@ export default function Home() {
         <A href="/about" class="text-sky-600 hover:underline">
           About Me
         </A>{" "}
+        {" - "}
+        <A href="/contacts" class="text-sky-600 hover:underline">
+          Contacts
+        </A>
       </p>
     </main>
   );
