@@ -1,8 +1,7 @@
 import { A } from "@solidjs/router";
-import { For, Match, Show, Switch, onMount, createResource, createSignal } from "solid-js";
-import { createStore } from "solid-js/store";
-import { readFileSync } from "fs";
+import { For, Match, Show, Switch, createResource } from "solid-js";
 
+import projects from '../data/data.json';
 import ProjectCard from "../components/ProjectCard";
 
 interface Project {
@@ -13,8 +12,7 @@ interface Project {
 }
 
 const fetchProjects = async () => {
-  const res = await fetch('http://localhost:4000/projects');
-  return res.json()
+  return projects;
 };
 
 export default function Projects() {
@@ -23,7 +21,7 @@ export default function Projects() {
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
       <h1 class="max-6-xs text-6xl text-sky-700 font-semibold uppercase my-16">Projects</h1>
-      <a class="font-sans m-5 text-sky-300 text-l text-wl" href="https://github.com/FuzionDragon" target="_blank">Code hosted on Github</a>
+      <a class="font-sans m-5 text-sky-300 text-l text-wl hover:underline" href="https://github.com/FuzionDragon" target="_blank">Code hosted on Github</a>
       <div class="flex flex-wrap justify-start justify-items-start">
         <Show when={projects.loading}>
           <p>Loading...</p>
@@ -39,7 +37,7 @@ export default function Projects() {
           </Match>
         </Switch>
       </div>
-      <p class="my-4">
+      <p class="my-8">
         <A href="/" class="text-sky-600 hover:underline">
           Home
         </A>

@@ -7,7 +7,7 @@ export default function Contacts() {
       <p class="font-sans m-5 text-sky-200 text-2xl text-wl">David Lun</p>
       <p class="font-sans m-5 text-sky-200 text-2xl text-wl">davidliu272@gmail.com</p>
       <a class="font-sans m-5 text-sky-300 text-2xl text-wl" href="https://github.com/FuzionDragon" target="_blank">https://github.com/FuzionDragon</a>
-      <p class="my-4">
+      <p class="my-8">
         <A href="/" class="text-sky-600 hover:underline">
           Home
         </A>
