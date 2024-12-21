@@ -1,0 +1,87 @@
+{
+  "_components-v1zxOCSr.js": {
+    "file": "assets/components-v1zxOCSr.js",
+    "name": "components",
+    "imports": [
+      "_routing-DaLkj7W0.js"
+    ]
+  },
+  "_routing-DaLkj7W0.js": {
+    "file": "assets/routing-DaLkj7W0.js",
+    "name": "routing"
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-BGzaa1mN.js",
+    "name": "_...404_",
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-DaLkj7W0.js",
+      "_components-v1zxOCSr.js"
+    ]
+  },
+  "src/routes/about.tsx?pick=default&pick=$css": {
+    "file": "assets/about-CQCnAN40.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-DaLkj7W0.js",
+      "_components-v1zxOCSr.js"
+    ]
+  },
+  "src/routes/contacts.tsx?pick=default&pick=$css": {
+    "file": "assets/contacts-D35PDscu.js",
+    "name": "contacts",
+    "src": "src/routes/contacts.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-DaLkj7W0.js",
+      "_components-v1zxOCSr.js"
+    ]
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-HbGJQCrx.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-DaLkj7W0.js",
+      "_components-v1zxOCSr.js"
+    ]
+  },
+  "src/routes/projects.tsx?pick=default&pick=$css": {
+    "file": "assets/projects-Darc3kxz.js",
+    "name": "projects",
+    "src": "src/routes/projects.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-DaLkj7W0.js",
+      "_components-v1zxOCSr.js"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-BTxo4Kvk.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_routing-DaLkj7W0.js"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/about.tsx?pick=default&pick=$css",
+      "src/routes/contacts.tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css",
+      "src/routes/projects.tsx?pick=default&pick=$css"
+    ],
+    "css": [
+      "assets/client-CfghDLNq.css"
+    ]
+  }
+}
