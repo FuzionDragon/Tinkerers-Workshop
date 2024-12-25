@@ -10,8 +10,8 @@ export default function Home() {
       <p class="my-8">Welcome to my portfolio website, a place to showcase some of my projects.</p>
       <p class="my-8">This includes this very website which is created using Solidstart, Typescript and Tailwindcss</p>
 
-      <div class="bg-gray-500 contents-center border-sky-700 text-xl border-solid border-1 rounded shadow-md max-w-96 p-4 m-10 font-sans max-6-xs mx-auto">
-        <p class="mb-4">Here are pages for my... </p>
+      <div class="bg-gray-500 contents-center border-sky-700 text-l border-solid border-1 rounded shadow-md max-w-96 p-4 m-10 font-sans max-6-xs mx-auto">
+        <p class="mb-4 font-semibold text-sky-300 text-xl">Here are pages for my... </p>
         <p class="my-4 hover:underline">
           <a href="/projects">Projects</a>
         </p>
