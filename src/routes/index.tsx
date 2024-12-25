@@ -19,7 +19,7 @@ export default function Home() {
           <a href="/about">About</a>
         </p>
         <p class="mt-4 hover:underline">
-          <a href="/contact">Contacts</a>
+          <a href="/contacts">Contacts</a>
         </p>
       </div>
     </main>
