@@ -58,6 +58,20 @@ export default function Projects() {
           </Match>
         </Switch>
       </div>
+      <p class="mt-8 mb-2 text-xl font-semibold">Other</p>
+      <div class="bg-gray-500 text-sky-100 text-l contents-center border-sky-700 border-solid border-1 items-center rounded shadow-md w-1/2 text-center p-4 m-10 font-sans mx-auto">
+        <h1 class="font-extrabold text-2xl my-5 text-wl">Personal Linux Desktop Configurations</h1>
+        <p class="my-5">
+          While not a project, I feel like this should be included somewhere on here.
+        </p>
+        <p class="my-5">
+          After using Linux for at least 3 years as a personal desktop, I have gained lots of experience and knowledge regarding most things Linux. 
+        </p>
+        <p class="my-5">
+          Linked below are my personal configurations and scripts to software used on my Arch Linux desktop.
+        </p>
+        <a class="my-10 text-sky-300 hover:underline text-wl" href="https://github.com/FuzionDragon/archdots" target="_blank">https://github.com/FuzionDragon/archdots</a>
+      </div>
     </main>
   );
 }
