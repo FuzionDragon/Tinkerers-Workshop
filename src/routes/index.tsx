@@ -16,6 +16,9 @@ export default function Home() {
           <a href="/projects">Projects</a>
         </p>
         <p class="my-4 hover:underline">
+          <a href="/skills">Skills</a>
+        </p>
+        <p class="my-4 hover:underline">
           <a href="/about">About</a>
         </p>
         <p class="mt-4 hover:underline">
