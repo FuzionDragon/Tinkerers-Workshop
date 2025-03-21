@@ -7,7 +7,7 @@
   },
   {
     "name": "Tracker",
-    "desc": "A unique command line task manager which has scripts for Rofi and Cronjob integration",
+    "desc": "A unique command line project / directory tracker",
     "link": "https://github.com/FuzionDragon/Tracker",
     "active": true
   },
@@ -28,5 +28,11 @@
     "desc": "A basic Rust Fizzbuzz application that uses Slint for the user interface.",
     "link": "https://github.com/FuzionDragon/fizzbuzz_rust",
     "active": false
+  },
+  {
+    "name" : "Dir2DB",
+    "desc" : "A simple Python CLI tool which searchs a directory for CSV files to be inserted into a Sqlite database. ",
+    "link" : "https://github.com/FuzionDragon/dir2db",
+    "active" : true
   }
 ]
